@@ -9,7 +9,7 @@ body {
 
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0px -10px;
   overflow: hidden;
   background-color: #eca1a6;
 
@@ -170,4 +170,40 @@ td {
 
 aside{
   float: left;
+  margin-left: 10px;
+  margin-right: 70px;
+  border-width:1px;
+  border-style:dashed;
+  border-color: #d64161;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+aside h2{
+  text-align: center;
+  text-decoration: underline;
+}
+
+main aside header{
+  font-weight: bold;
+}
+
+main aside a{
+  font-style:italic;
+  font-size: 10px;
+}
+
+main article {
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+main article header{
+  font-size: 30px;
+  padding-top: 30px;
+  font-family: fantasy;
+  text-align: center;
+  color: #d64161;
+
 }
