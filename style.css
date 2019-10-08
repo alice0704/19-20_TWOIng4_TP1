@@ -2,6 +2,9 @@
 
 body {
   background-color: #f7cac9;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New";
 }
 
 ul {
@@ -9,6 +12,8 @@ ul {
   margin: 0;
   overflow: hidden;
   background-color: #eca1a6;
+
+  z-index: 10;
 }
 
 li {
@@ -37,11 +42,19 @@ ul {
   width: 100%;
 }
 
+main aside {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
 
 .titre { 
   text-align: center;
   margin-top: 70px;
   color: white;
+  font-family: fantasy;
+  letter-spacing: 5px;
+  font-size: 50px;
 }
 
 
@@ -52,6 +65,7 @@ ul {
 }
 
 .roundedImage{
+    position: relative;
     overflow:hidden;
     -webkit-border-radius:50px;
     -moz-border-radius:50px;
@@ -60,6 +74,9 @@ ul {
     height:300px;
     margin-left: auto;
     margin-right: auto;
+    border: solid 8px white;
+
+    z-index: 0;
   }
 
 
@@ -89,4 +106,68 @@ td {
   padding-right: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.cadre{
+  position: absolute;
+  left: 473px;
+  bottom: 34px;
+  width: 330px;
+  height: 320px;
+
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+  animation: animate 0.9s linear infinite;
+
+  z-index: 0;
+}
+
+@keyframes animate{
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+
+.cadre span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+}
+
+.cadre span:nth-child(1){
+  filter: blur(5px);
+}
+
+.cadre span:nth-child(2){
+  filter: blur(10px);
+}
+
+.cadre span:nth-child(3){
+  filter: blur(25px);
+}
+
+.cadre span:nth-child(4){
+  filter: blur(50px);
+}
+
+.cadre: after{
+  content:'';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background-color: #f7cac9;
+  border-radius: 50%;
+}
+
+aside{
+  float: left;
 }
