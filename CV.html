@@ -8,10 +8,11 @@
 
         <ul>
 		  <li><a class="active" href="CV.html">Bienvenue dans mon CV</a></li>
-		  <li><a href="#MesExperiences">Mes expériences</a></li>
 		  <li><a href="#MesEtudes">Mes études</a></li>
-		  <li><a href="DiversInformations.html">Divers Informations</a></li>
-		  <li><a href="MeContacter.html">Me contacter</a></li>
+		  <li><a href="#MesExperiencesPro">Mes expériences Pro</a></li>
+		  <li><a href="#MesExperiencesAsso">Mes expériences Asso</a></li>
+		  <li><a href="#InfosP">Infos Perso</a></li>
+		  <li><a href="#MeContacter">Me contacter</a></li>
 		</ul>
 
 </head>
@@ -42,16 +43,22 @@
 	<main>
 
 		<aside>
-
-			<h2>Informations personnelles</h2>
-			<p>22 ans</p>
-			<p>5 rue Rebeval, boite numéro 3</p>
-			<p>75019 PARIS</p>
+			<article>
+				<h2 id="InfosP">Informations personnelles</h2>
+				<p>Alice Sabot</p>
+				<p>22 ans</p>
+				<p>+33 6 99 65 68 52</p>
+				<p>5 rue Rebeval, boite numéro 3</p>
+				<p>75019 PARIS</p>
+			</article>
 			<br>
 
 			<header>Langues</header>
 			<p>Anglais : Parlé et écrit couramment</p>
-			<p>IELTS : 7,5/9</p>
+			<li>IELTS : 7,5/9</li>
+			<li>IGCSE English litterature, 2015</li>
+			<li>IGCSE English first language, 2014</li>
+			<p>Espagnol : Niveau correct</p>
 			<br>
 
 			<header>Compétences</header>
@@ -62,8 +69,9 @@
 
 			<header>Mes passions</header>
 			<p>Spors : foot, snowboard</p>
-			<p>Découverte de nouvelles cultures</p>
-			<a href="Monderniervoyage.html">En savoir plus ici</a>
+			<p>Voyages, Découverte de nouvelles cultures</p>
+			<h5>Mon dernier voyage :</h5>
+			<embed src="VideoCV.mp4" autostart="false" height="266" width="470"/>
 
 		</aside>
 
@@ -72,40 +80,87 @@
 			<br>
 			<p>
 				<h3>Etudiante en école d'ingénieur </h3>
-				<h3>Ece Paris - Lyon,</h3>
-				<blockquote> 2016 - 2021</blockquote>
+				<h4 class="display-inline">Ece Paris - Lyon,</h4>
+				<blockquote class="display-inline annee-etudes">2016 - 2021</blockquote>
 				<br>
 				<h3>Etudiante à Chulalongkorn University</h3>
-				<h3>Bangkok, Thailand</h3>
-				<blockquote>Août - Décembre 2018</blockquote>
+				<h4 class="display-inline">Bangkok, Thailand</h4>
+				<blockquote class="display-inline annee-etudes">Août - Décembre 2018</blockquote>
 				<br>
 				<h3>Lycéenne, série S</h3>
-				<h3>Massillon, Paris</h3>
-				<blockquote>2013 – 2016</blockquote>
+				<h4 class="display-inline">Massillon, Paris</h4>
+				<blockquote class="display-inline annee-etudes">2013 – 2016</blockquote>
 			</p>
 		</article>
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 		<br>
 
 		<article>
-			<header id="MesExperiences">Mes expériences</header>
+			<header id="MesExperiencesPro">Mes expériences Professionnelles</header>
 			<br>
 			<p>
-				<h3>Stage ouvrier chez Schneider Electric</h3>
+				<h3 class="display-inline">Opératrice d'attraction</h3>
+				<blockquote class="display-inline annee-exp">Eté 2018 - 2019</blockquote>
+				<h4>Jardin d'acclimation, Paris</h4>
+			</p>
+			<p>
+				<h3 class="display-inline">Stage ouvrier chez Schneider Electric</h3>
+				<blockquote class="display-inline annee-exp">01/2019 – 02/2019</blockquote>
 				<li>Découverte d’une « Usine du future »</li>
 				<li>Suivi d’un ingénieur dans ses occupations</li>
-				<blockquote>01/2019 – 02/2019</blockquote>
+				
+			</p>
+			<br>
+			<p>
+				<h3 class="display-inline">Stage ouvrier chez Airbus Helicopters</h3>
+				<blockquote class="display-inline annee-exp">01/2018 – 02/2018</blockquote>
+				<li>Mise en place d’un référentiel de défauts sur les pales en finition</li>
 			</p>
 		</article>
+
+		<article>
+			<header id="MesExperiencesAsso">Mes expériences Associatives</header>
+			<br>
+			<p>
+				<h3 class="display-inline">Vice Présidente Association/Administration</h3>
+				<h4 class="display-inline">Séminaire d'intégration de l'ECE</h4>
+				<blockquote class="display-inline annee-exp">2019 - 2020</blockquote>
+			</p>
+			<p>
+				<h3>Capitaine équipe de foot féminine</h3>
+				<h4 class="display-inline">BDS de l'ECE Paris</h4>
+				<blockquote class="display-inline annee-exp">2017 -2018</blockquote>
+			</p>
+		</article>
+
 	</main>
-	
 
 </body>
+
+<footer>
+		
+	<h4 id="MeContacter">Merci de l'attention que vous portez à mon CV.</h4>
+	<h4>N'hésitez pas à me contacter ici !</h4>
+	
+	<form action="/ma-page-de-traitement" method="post">
+	    <div class="display-inline">
+	        <label for="name">Nom :</label>
+	        <input type="text" id="name" name="user_name">
+	    </div>
+	    <div class="display-inline">
+	        <label for="mail">E-mail :</label>
+	        <input type="email" id="mail" name="user_mail">
+	    </div>
+	    <div class="display-inline">
+	        <label for="msg">Message :</label>
+	        <textarea id="msg" name="user_message"></textarea>
+	    </div>
+	</form>
+	<br>
+	<div class="button">
+        <button type="submit">Envoyer le message</button>
+    </div>
+
+</footer>
+
 </html>
